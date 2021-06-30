@@ -1,0 +1,56 @@
+.email {
+  background: #ffffff;
+  border: 1px solid #c3c2cf;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 96px;
+  overflow-y: scroll;
+  &__wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px;
+
+    &__inputtext {
+      height: 25px;
+      box-sizing: border-box;
+      border-radius: 0.2rem;
+      color: #c3c2cf;
+      font-size: 14px;
+      outline: none;
+      border: none;
+      &:focus {
+        border-color: cornflowerblue;
+        outline: none;
+      }
+
+      &.has-error {
+        border-color: tomato;
+      }
+    }
+
+    &__tag-item {
+      background-color: rgba(102, 153, 255, 0.2);
+      font-size: 14px;
+      border-radius: 30px;
+      padding: 0 4px 0 1rem;
+      display: inline-flex;
+      align-items: center;
+      height: 24px;
+    }
+    &__close-button {
+      width: 22px;
+      height: 22px;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+      margin-left: 10px;
+      font-weight: bold;
+      padding: 0;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

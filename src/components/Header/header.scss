@@ -1,0 +1,17 @@
+.header {
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+  color: #050038;
+
+  &__projectname {
+    font-weight: normal;
+  }
+
+  p {
+    display: flex;
+  }
+}

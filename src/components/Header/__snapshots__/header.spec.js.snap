@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Panel component 1`] = `
+<div
+  className="header"
+>
+  <p
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Share&nbsp;<span class='header__projectname'>Project name</span>&nbsp;with others",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`should render the header component 1`] = `
+<div
+  className="header"
+>
+  <p
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Share&nbsp;<span class='header__projectname'>Project name</span>&nbsp;with others",
+      }
+    }
+  />
+</div>
+`;

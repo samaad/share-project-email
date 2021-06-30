@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the App component 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="panel"
+  >
+    <div
+      className="panel__body"
+    >
+      <div
+        className="header"
+      >
+        <p
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Share&nbsp;<span class='header__projectname'>Project name</span>&nbsp;with others",
+            }
+          }
+        />
+      </div>
+      <div
+        className="email"
+      >
+        <div
+          className="email__wrapper"
+        >
+          <input
+            className="email__wrapper__inputtext"
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            placeholder="Type email addresses..."
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="panel__footer"
+    >
+      <div
+        className="footer"
+      >
+        <button
+          className="button"
+        >
+          Add email
+        </button>
+        <button
+          className="button"
+        >
+          Get emails count
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render the Panel component 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="panel"
+  >
+    <div
+      className="panel__body"
+    >
+      <div
+        className="header"
+      >
+        <p
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Share&nbsp;<span class='header__projectname'>Project name</span>&nbsp;with others",
+            }
+          }
+        />
+      </div>
+      <div
+        className="email"
+      >
+        <div
+          className="email__wrapper"
+        >
+          <input
+            className="email__wrapper__inputtext"
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            placeholder="Type email addresses..."
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="panel__footer"
+    >
+      <div
+        className="footer"
+      >
+        <button
+          className="button"
+        >
+          Add email
+        </button>
+        <button
+          className="button"
+        >
+          Get emails count
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
