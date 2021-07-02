@@ -21,6 +21,14 @@ const EmailComponent = () => {
     setItems(items.filter((i) => i !== item));
   };
 
+  const handlePaste = (e) => {
+    const pasterEmail = e.clipboardData.getData("Text");
+    if (pasterEmail) {
+      const emails = pasterEmail.split(",");
+      setItems([...items, ...emails]);
+    }
+  };
+
   const isValid = (email) => {
     let error = null;
 
@@ -59,6 +67,7 @@ const EmailComponent = () => {
           placeholder="Type email addresses..."
           onKeyDown={(e) => handleKeyDown(e)}
           onChange={(e) => setValue(e.target.value)}
+          onPaste={(e) => handlePaste(e)}
         />
       </div>
     </div>
