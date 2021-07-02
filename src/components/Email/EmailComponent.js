@@ -1,10 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, memo, useEffect } from "react";
 import "./email.scss";
 
 const BLOCK_NAME = "email";
-const EmailComponent = () => {
+const EmailComponent = ({ emailList, checkEmail }) => {
   const [items, setItems] = useState([]);
   const [value, setValue] = useState("");
+
+  useEffect(() => {
+    const validEmail =
+      items && items.filter((item) => isValid(item) === true).length;
+    if (validEmail > 0) {
+      alert(
+        `Total Email entered are ${items.length} and valid Email Count is ${validEmail}`
+      );
+    }
+  }, [checkEmail]);
+
+  useEffect(() => {
+    if (emailList && emailList.length > 0) {
+      setItems([...emailList]);
+    }
+  }, [emailList]);
 
   const handleKeyDown = (evt) => {
     if (["Enter", "Tab", ","].includes(evt.key)) {
@@ -74,4 +90,4 @@ const EmailComponent = () => {
   );
 };
 
-export default EmailComponent;
+export default memo(EmailComponent);

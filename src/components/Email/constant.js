@@ -1,0 +1,18 @@
+export const randomElement = [
+  "ivan@mail.ru",
+  "beta.com",
+  "max@mail.ru",
+  "abd@axr.com",
+  "sampleemail.com",
+  "alpha@example.com",
+  "charli@mvp.com",
+  "Johan@example.com",
+  "test@emalcom",
+  "steve@example.com",
+  "learning@com",
+  "mathew@gmail.com",
+  "root@mvp.com",
+  "warner@mvl.com",
+  "root@mvp",
+  "warner@",
+];

@@ -4,9 +4,9 @@ import './footer.scss';
 
 const BLOCK_NAME= 'button';
 
-const Button = ({lable}) => {
+const Button = ({lable, clickHandler}) => {
   return (
-    <button className={BLOCK_NAME}>
+    <button className={BLOCK_NAME} onClick={clickHandler}>
       {lable}
     </button>
   )
